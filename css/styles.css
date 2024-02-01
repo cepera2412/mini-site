@@ -1,0 +1,557 @@
+/* Основные параметры */
+header {
+    display: flex;
+    height: 72px;
+}
+
+body {
+    font-family: "Roboto", "Raleway", sans-serif;
+    color: #434455;
+    line-height: 24px;
+    background-color: #ffffff;
+    width: 1440px;
+    margin: 0;
+}
+
+footer {
+    background-color: #2E2F42;
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-style: normal;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 1.12px;
+    margin: 0;
+    padding-top: 188px;
+}
+
+h2 {
+    color: #2E2F42;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+h3 {
+    color:#2E2F42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    margin: 0;
+}
+
+/* Шапка */
+.header-contant:active {
+    color: #404BBF;
+}
+
+.header-list:active {
+    color: #404BBF;
+    border-bottom: 4px solid #404BBF;
+}
+
+.header-logo {
+    color: #2E2F42;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    margin-left: 200px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 76px;
+}
+
+.logo-web {
+    color: #4D5AE5;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+}
+
+.header-list {
+    color: #2E2F42;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    margin-left: 0;
+    margin-right: 40px;
+}
+
+.header-contant {
+    color: #434455;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    margin-right: 40px;
+}
+
+.header-address {
+    margin-left: 292px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.header-menu-list {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 0;
+    margin: 0;
+}
+
+.header-nav {
+    display: flex;
+}
+
+/* Главная секция */
+.hero-section {
+    background-image: url(../images/people-office.png); 
+    height: 600px;
+    background-size: cover;
+}
+
+.hero-dark-background {
+    background-color: rgba(46, 47, 66, 0.7);
+    height: 600px;
+    width: 1440px;
+}
+
+.hero-button {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.64px;
+    padding: 16px 32px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;
+    background: #4D5AE5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    margin-left: 635px;
+    margin-top: 48px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background: #404BBF;
+}
+
+.hero-button:active {
+    background: #6f79e0;
+    box-shadow: none;
+}
+
+/* ============================ Модальное окно ============================== */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Мадальное окно */
+.hero-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 408px;
+    /* height: 584px; */
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #FCFCFC;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Затемнение фона */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(46, 47, 66, 0.40);
+    z-index: 999;
+
+}
+
+.modal-title {
+    color: #2E2F42;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+label {
+    color: #8E8F99;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.48px;
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.input-modal {
+    width: 360px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    padding-left: 10px;
+    margin-bottom: 8px;
+}
+
+.textarea-modal {
+    width: 360px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    padding-left: 10px;
+    margin-bottom: 16px;
+}
+
+.input-modal:hover,
+.input-modal:focus,
+.textarea-modal:hover,
+.textarea-modal:focus {
+    border-radius: 4px;
+    border: 1px solid #4D5AE5;
+}
+
+.textarea-modal::placeholder{
+    color: rgba(46, 47, 66, 0.40);
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.48px;
+    padding-left: 10px;
+    padding-top: 8px;
+}
+
+.input-modal::placeholder {
+    color: transparent;
+}
+
+input#login::placeholder {
+    background: url("../images/person-icon.svg") no-repeat;
+}
+
+input#phone::placeholder {
+    background: url("../images/phone-icon.svg") no-repeat;
+}
+
+input#email::placeholder {
+    background: url("../images/email-icon.svg") no-repeat;
+}
+
+.privacy-policy-conteiner {
+    display: flex;
+    padding: 0;
+    color: #8E8F99;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.48px;
+    margin-bottom: 24px;
+}
+
+.privacy-policy-input {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    stroke-width: 1px;
+    stroke: rgba(46, 47, 66, 0.40);
+}
+
+.privacy-policy-input:active {
+    fill: #404BBF;
+    stroke: #404BBF;
+}
+
+.text-privacy-policy {
+    margin: 0;
+    margin-left: 8px;
+    color: #8E8F99;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.48px;
+}
+
+.link-privacy-policy {
+    color: #4D5AE5;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.48px;
+}
+
+.button-conteiner {
+    padding-left: 20px;
+    margin: 0 24px;
+}
+
+.button-modal {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.64px;
+    padding: 10px 24px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;
+    background: #4D5AE5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    margin: 0 12px;
+    
+}
+
+.button-modal:hover,
+.button-modal:focus {
+    background: #404BBF;
+}
+
+.button-modal:active {
+    background: #6f79e0;
+    box-shadow: none;
+}
+
+/* Преимущества */
+.advant-title {
+    visibility: hidden;
+    margin: 0;
+}
+
+.advant-list {
+    display: flex;
+    padding: 80px 156px 120px 132px;
+    margin: 0;
+}
+
+.advant-list-conteiner {
+    margin-right: 24px;
+}
+
+.advant-background {
+    background-color: #F4F4FD;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.advant-img {
+    margin: 24px 100px;
+}
+
+.advant-text {
+    margin: 0;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+/* Команда */
+.team-section {
+    background-color: #F4F4FD;
+    height: 780px;
+}
+
+.team-title {
+    padding-top: 120px;
+    padding-bottom: 72px;
+}
+
+.team-list {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.team-list-conteiner {
+    margin: 0 12px;
+    background-color: #ffffff;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.team-name {
+    text-align: center;
+    padding-top: 32px;
+    margin-bottom: 8px;
+}
+
+.team-text {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.team-list-contact {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.team-contact-conteiner {
+    padding: 0 12px;
+    margin-bottom: 32px;
+}
+
+/* Portfolio */
+.portfolio-title {
+    padding-top: 120px;
+    padding-bottom: 72px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+}
+
+.portfolio-list-conteiner {
+    border: 1px solid #E7E9FC;
+    margin: 0 12px;
+    margin-bottom: 48px;
+}
+
+.portfolio-name {
+    margin-left: 16px;
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
+
+.portfolio-text {
+    font-size: 16px;
+    margin-left: 16px;
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+/* Подвал */
+.footer-logo-conteiner {
+    width: 264px;
+    margin: 101.5px 120px 100px 156px;
+}
+
+.footer-logo {
+    color: #F4F4FD;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+}
+
+.footer-text {
+    color: #F4F4FD;
+    font-size: 16px;
+}
+
+.footer-contact-conteiner {
+    margin: 100px 80px 132px 0;
+}
+
+.footer-list-contact {
+    display: flex;
+    padding: 0
+}
+
+.footer-contact-text {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.footer-contact {
+    margin: 0;
+    margin-right: 16px;
+}
+
+.footer-input-conteiner {
+    margin: 100px 24px 132px 0;
+}
+
+.footer-input-text {
+    color:#ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.footer-input {
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    border: #ffffff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding-left: 15px;
+}
+
+input::placeholder {
+    padding-left: 16px;
+}
+
+.footer-button {
+    margin-top: 140px;
+    height: 40px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.64px;
+    border-radius: 4px;
+    background: #4D5AE5;
+    display: inline-flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-button:hover,
+.footer-button:focus {
+    background: #404BBF;
+}
+
+.footer-button:active {
+    background: #6f79e0;
+    box-shadow: none;
+}
+
